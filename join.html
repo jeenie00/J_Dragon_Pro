@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pear1kgram</title>
+   <style>
+    
+    html {
+      height : 100%;  
+      margin : 0;
+      padding : 0;
+    }
+    image {
+      align-items: center;
+    justify-content: center; 
+    }
+    
+    body {      
+      margin : 0;
+      padding : 0;
+      height : 100%;
+      font-size : 15px;
+      font-family : "KopubDotum", "Gulim";
+    }
+    
+    header {
+      position : relative;
+      right : 0px;
+      width : 80%;
+      margin : 0 auto;
+    }
+    
+    #container {
+      position : relative;
+      width : 80%;
+      height : 70%;
+      padding : 10px;
+      margin: 20px auto 20px auto;
+      display : flex;
+    }
+    
+    h1 {
+      text-align : center;
+      padding : 15px;
+      font-size : 2.5em;
+    }
+    
+    button {
+      border : solid 1px rgb(32, 173, 238);
+      background-color : rgb(32, 173, 238);
+      padding : 10px 30px 10px 30px;
+      font-family : "KopubDotum", "Gulim";
+      font-size : 1em;
+      font-weight : normal;
+      color : white;
+    }
+    
+    form {
+      font-size : 1.5em;
+      font-family : "KopubDotum", "Gulim";
+      margin : 0 auto;
+    }
+    
+    .content {
+      margin-bottom : 15px;
+    }
+        
+    .btn {
+      border : solid 1px rgb(32, 173, 238);
+      background-color : rgb(32, 173, 238);
+      padding : 10px 30px 10px 30px;
+      font-family : "KopubDotum", "Gulim";
+      font-size : 17px;
+      font-weight : normal;
+      color : white;
+      float : right;
+    }
+
+    input[type="text"], input[type="password"] {
+      border : solid 1px lightgray;
+      font-size : 17px;
+      font-family : "KopubDotum", "Gulim";
+      width : 100%;
+      height : 45px;
+      padding : 10px;
+      box-sizing : border-box;
+    }
+            
+    #joinForm {
+      width : 30%;
+      margin : 0 auto;
+    }
+    
+    .message {
+      margin-top : -5px;
+      margin-bottom : 10px;
+      font-size : 15px;
+      text-align : center;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <a class="navbar-brand" href="#">
+
+    	<img src="./images/mainicon.png" alt="P1K" width="158" height="47">
+   </a>
+  <header>
+    <h1>회원가입</h1>
+  </header>
+
+  <div id = "container">
+    <!-- 파일 업로드 기능 추가 시 속성 설정 -->
+       
+    <div id = "joinForm">
+      <form method = "post" action = "/user/join">
+        <div class = "content">
+          <input type = "text" name = "userName" placeholder = "휴대폰번호 또는 이메일주소" style = "margin-top : 20px;">        
+        </div>
+        <div class = "content">
+          <input type = "text" name = "userEmail" placeholder = "성명">        
+        </div>       
+        <div class = "content">
+          <input type = "text" name = "userId" placeholder = "사용자이름">        
+        </div>
+        <!-- 아이디 중복 시 메시지 출력 -->
+        <!-- <div class = "message">메시지 출력</div> -->      
+        <div class = "content">
+          <input type = "password" name = "userPw" placeholder = "비밀번호" >
+        </div>
+        <div class = "content">
+          <input type = "password" name = "userPwChk" placeholder = "비밀번호 확인">
+        </div>
+        <!-- 비밀번호가 일치하지 않을 경우 메시지 출력 -->
+        <!-- <div class = "message">메시지 출력</div> -->      
+        <div style = "margin-top : -5px; margin-bottom : 10px; font-size : 15px; text-align : center;">
+          <input type = "checkbox"> <a href = "#">약관</a>에 동의
+        </div>      
+        <div>  
+          <input type = "submit" value = "가입" class = "btn" style = "width : 100%;">
+        </div>
+      </form>
+      <div style= "text-align : center; margin-top : 60px;">
+         <span>계정이 있으신가요?</span> <a href = "#" >로그인</a>
+      </div>
+   <div>   
+  </div>
+</body>
+</html>
