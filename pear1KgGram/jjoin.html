@@ -6,18 +6,13 @@
 <title>pear1kgram</title>
    <style>
     
-    .html {
+    html {
       height : 100%;  
       margin : 0;
       padding : 0;
     }
     
-    .image {
-      align-items: center;
-    justify-content: center; 
-    }
-    
-    .body {      
+    body {      
       margin : 0;
       padding : 0;
       height : 100%;
@@ -25,14 +20,14 @@
       font-family : "KopubDotum", "Gulim";
     }
     
-    .header {
+    header {
       position : relative;
       right : 0px;
       width : 80%;
       margin : 0 auto;
     }
     
-    .container {
+    #container {
       position : relative;
       width : 80%;
       height : 70%;
@@ -41,13 +36,13 @@
       display : flex;
     }
     
-    .h1 {
+    h1 {
       text-align : center;
       padding : 15px;
       font-size : 2.5em;
     }
     
-    .button {
+    button {
       border : solid 1px rgb(32, 173, 238);
       background-color : rgb(32, 173, 238);
       padding : 10px 30px 10px 30px;
@@ -57,7 +52,7 @@
       color : white;
     }
     
-    .form {
+    form {
       font-size : 1.5em;
       font-family : "KopubDotum", "Gulim";
       margin : 0 auto;
@@ -78,7 +73,7 @@
       float : right;
     }
 
-    .input[type="text"], input[type="password"] {
+    input[type="text"], input[type="password"] {
       border : solid 1px lightgray;
       font-size : 17px;
       font-family : "KopubDotum", "Gulim";
@@ -88,7 +83,7 @@
       box-sizing : border-box;
     }
             
-    .joinForm {
+    #joinForm {
       width : 30%;
       margin : 0 auto;
     }
@@ -105,17 +100,16 @@
 <body>
 
   <a class="navbar-brand" href="#">
-
     	<img src="./images/mainicon.png" alt="P1K" width="158" height="47">
-   </a>
+    	</a>
   <header>
     <h1>회원가입</h1>
   </header>
 
-  <div class = "container">
+  <div id = "container">
     <!-- 파일 업로드 기능 추가 시 속성 설정 -->
        
-    <div class = "joinForm">
+    <div id = "joinForm">
       <form method = "post" action = "/user/join">
         <div class = "content">
           <input type = "text" name = "userName" placeholder = "휴대폰번호 또는 이메일주소" style = "margin-top : 20px;">        
@@ -144,7 +138,7 @@
         </div>
       </form>
       <div style= "text-align : center; margin-top : 60px;">
-         <span>계정이 있으신가요?</span> <a href = "#" >로그인</a>
+         <span> 계정이 있으신가요?</span> <a href = "#" >로그인</a>
       </div>
    <div>   
   </div>
