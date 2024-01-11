@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container, .surround, inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container {
+  height: 100vh;
+}
+
+.surround{ 
+  width: 400px;
+  height: 500px;
+  background-color: rgba(59,130,246,.5);
+  border-radius: 8px;
+  
+}
+
+.inner{
+  width: 370px;
+  height: 470px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.content {
+  text-align: center;
+  margin: 50px 80px;
+}
+
+input{
+  display:inline-block;
+}
