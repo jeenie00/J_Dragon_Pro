@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.main_body {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.left_body {
+    background-color: #F8F8F8;
+    width: 300px;
+    height: 1000px;
+    margin-right: 100px;
+    margin-left: -10%;
+}
+
+/* 왼쪽 메뉴 바 고정 */
+.left_body ul {
+	list-style-type: none;
+	margin: 8px;
+	padding: 8px;
+	overflow: auto;
+	position: fixed;
+}
+
+.left_body ul li {
+	padding: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.left_body ul li:hover{
+	color: gray;
+}
+
+/* 우측 프로필 바 고정 */
+.right_body{
+	background-color: #F8F8F8;
+	width: 300px;
+	height: 1000px;
+	left: 69%;
+	overflow: auto;
+	position: fixed;
+}
