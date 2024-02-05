@@ -1,0 +1,87 @@
+* {/* 전체 설정 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+/* 사이드바 프레임 */
+.sidebar{
+box-sizing: border-box;
+
+position: fixed;
+width: 318px;
+height: 1024px;
+
+background: #FFFFFF;
+border: 3px solid #F1EDED;
+}
+
+/* 로고 */
+.logo{
+position: absolute;
+width: 66px;
+height: 84px;
+left: 21px;
+top: 19px;
+
+background: url(image.png);
+}
+
+/* 홈 */
+.home{
+position: absolute;
+width: 78px;
+height: 38px;
+left: 28px;
+top: 156px;
+
+background: url(image.png);
+}
+
+/* 검색 */
+.search{
+position: absolute;
+width: 101px;
+height: 50px;
+left: 29px;
+top: 220px;
+}
+
+/* 메세지 */
+.message{
+position: absolute;
+width: 102px;
+height: 49px;
+left: 28px;
+top: 291px;
+}
+
+/* 알림 */
+.alert{
+position: absolute;
+width: 91px;
+height: 33px;
+left: 24px;
+top: 366px;
+}
+
+/* 만들기 */
+.make{
+position: absolute;
+width: 115px;
+height: 50px;
+left: 21px;
+top: 429px;
+}
+
+/* 더보기 */
+.plus{
+position: absolute;
+width: 133px;
+height: 49px;
+left: 26px;
+top: 965px;
+}
