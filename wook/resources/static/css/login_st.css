@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 좌측 메인 이미지 */
+.p1k_img_main{
+	position: absolute;
+	left: 528px;
+	top: 86px;
+}
+
+/* 박스상단 사과 이미지 */
+.p1k_img_logo{
+	position: absolute;
+	left: 1114px;
+	top: 184px;
+}
+
+/*=============================================================================================================================================*/
+	
+
+/* 로그인 박스(상단 입력 박스) */
+.p1k_loginbox1{
+	position: relative;
+	width: 328.91px;
+	height: 328.05px;
+	left: 990px;
+	top: 280px;
+	background: #FFFFFF;
+	border: 4px solid #CCCCCC;
+	border-radius: 6px;
+}
+
+/*로그인 인풋박스*/
+.p1k_login__input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8px;
+	padding: 0 40px;
+}
+
+
+/*로그인 인풋태그*/
+.p1k_login__input input {
+	width: 100%;
+	height: 38px;
+	padding: 9px 0 7px 8px ;
+	border-width: 0 0 3.57px;
+	border-radius: 3px;
+	margin-bottom: 6px;
+	outline: none;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%; /* 24px */
+}
+
+
+/*로그인 버튼*/
+.p1k_login__input button {
+	border: 0;
+ 	width: 100%;
+	height: 42px;
+    background-color: #0095f6;
+	color: #fff;
+	margin-top: 10px;
+	font-weight: 700;
+	border-radius: 3px;
+	transition: background 0.5s;
+	letter-spacing: -0.176px;
+    font-size : 16px;
+}
+
+/*비밀번호를 잊으셧나요?*/
+.p1k_forgetPWd{
+	margin-top: 8px;
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 24px */
+	letter-spacing: -0.176px;
+}
+
+.p1k_forgetPWd a{
+	color: #1E1E1E;
+	text-decoration-line: none;
+}
+
+/*=============================================================================================================================================*/
+
+/*로그인 박스(하단 입력 박스)*/
+.p1k_loginbox2{
+	position: relative;
+	width: 328.91px;
+	height: 54px;
+	left: 990px;
+	top: 290px;
+	background: #FFFFFF;
+	border: 4px solid #CCCCCC;
+	border-radius: 6px;
+}
+
+/* 계정이 없으신가요? */
+.p1k_notHaveAccount {
+	margin-top: 15px;
+	text-align: center;
+	font-family:'inter';
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align:middle;
+}
+
+.p1k_notHaveAccount a{
+	color: #1E1E1E;
+	text-decoration-line: none;
+	font-weight: 700;
+}
